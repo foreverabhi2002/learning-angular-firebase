@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "learning-angular-firebas-2f768": {
+      "hosting": {
+        "learning-angular-firebase": [
+          "learning-angular-firebas-2f768"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "learning-angular-firebas-2f768"
+  }
+}
