@@ -23,12 +23,10 @@ export class ApiService {
       id: doc.id,
     }));
   }
+
+  public async addProduct(data) {
+    const colRef = collection(this.firestore, 'products');
+    return await addDoc(colRef, data);
+  }
 }
 
-// collection(this.firestore, 'products');
-// const snaps = await getDocs(colRef);
-
-// return snaps.docs.map((doc) => ({
-//   ...doc.data(),
-//   id: doc.id,
-// }));

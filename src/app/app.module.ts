@@ -8,9 +8,10 @@ import { environment } from '../environments/environment';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { CreateProductComponent } from './pages/dashboard/create-product/create-product.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent],
+  declarations: [AppComponent, DashboardComponent, CreateProductComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
