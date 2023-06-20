@@ -3,6 +3,8 @@ import {
   Firestore,
   addDoc,
   collection,
+  doc,
+  getDoc,
   getDocs,
 } from '@angular/fire/firestore';
 
@@ -22,6 +24,16 @@ export class ApiService {
       ...doc.data(),
       id: doc.id,
     }));
+  }
+  public async getProduct(id) {
+    const colRef = collection(this.firestore, 'products');
+    const docRef = doc(colRef, id);
+    const snap = await getDoc(docRef);
+
+    return {
+      ...snap.data(),
+      id: snap.id,
+    };
   }
 
   public async addProduct(data) {
