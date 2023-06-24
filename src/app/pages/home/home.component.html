@@ -1,0 +1,9 @@
+<div class="products">
+  <ul><li *ngFor="let product of products" (click)="productToCart(product)">{{product.name}}</li></ul>
+</div>
+<br><br>
+<div ><ol>
+  <li *ngFor="let cartProduct of getCartProducts">
+    {{cartProduct.name}}
+  </li>
+</ol></div>

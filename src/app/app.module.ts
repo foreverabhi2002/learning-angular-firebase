@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CreateProductComponent } from './pages/dashboard/create-product/create-product.component';
 import { EditProductComponent } from './pages/dashboard/edit-product/edit-product.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { EditProductComponent } from './pages/dashboard/edit-product/edit-produc
     DashboardComponent,
     CreateProductComponent,
     EditProductComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
